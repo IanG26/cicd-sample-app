@@ -1,7 +1,14 @@
 #!/bin/bash
 set -euo pipefail
+#!/bin/bash
+set -e
 
+# Clean old temp folder if it exists
+rm -rf tempdir
+
+# Create a fresh one
 mkdir tempdir
+
 mkdir tempdir/templates
 mkdir tempdir/static
 
